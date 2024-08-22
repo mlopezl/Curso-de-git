@@ -120,3 +120,23 @@ dl dd:last-child{
     font-weight: bold;
     border-top: 4px solid #3d4e6b;
 }
+
+@media (max-width: 800px){
+    .logo img{
+        display: none;
+    }
+
+    .menu-list{
+        flex-direction: column;
+    }
+
+    dl{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .header{
+       height: 320px;
+    }
+}
