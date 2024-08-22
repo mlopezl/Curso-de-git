@@ -75,6 +75,12 @@ body{
     border-bottom: none;
 }
 
+dl{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 20px;
+}
+
 .titulo{
     background-color: #0d1117 ;
     font-size: 22px;
@@ -91,14 +97,17 @@ body{
 dt{
     font-weight: bold;
     margin-bottom: 10px;
-    text-decoration: underline;
     color: #ee5033;
     padding-left: 10px;
 }
 
 dd{
-    padding-left: 50px;
     padding-bottom: 20px;
+    border-bottom: 1px solid #ee5033;
+}
+
+dl dd:last-child{
+    margin-bottom: 20px;
 }
 .pie{
     width: 100%;
