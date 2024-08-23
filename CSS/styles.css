@@ -14,7 +14,7 @@ body{
     gap: 30px;
     justify-content: center;
     align-items: center;
-    border-bottom: 4px solid #3d4e6b;
+    border-bottom: 4px solid white;
 }
 
 .inside-container{
@@ -36,7 +36,7 @@ body{
 
 .menu-list{
     display: flex;
-    gap: 1px;
+    gap: 5px;
     list-style: none;
 }
 
@@ -48,7 +48,7 @@ body{
     font-weight: bold;
     text-shadow: 1px 1px #de4a2f;
     border-radius: 5px;
-    box-shadow: 1px 1px lightgray;
+    box-shadow: 2px 2px white;
 }
 
 .menu-list li a{
@@ -67,8 +67,8 @@ body{
     margin: 0 auto;
     padding-top: 30px;
     font-size: 15px;
-    border-left: 4px solid #3d4e6b;
-    border-bottom: 4px solid #3d4e6b;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
 }
 
 .principal .conceptos:last-child{
@@ -117,7 +117,7 @@ dl dd:last-child{
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    border-top: 4px solid #3d4e6b;
+    border-top: 4px solid white;
 }
 
 @media (max-width: 800px){
