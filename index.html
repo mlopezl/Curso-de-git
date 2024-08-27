@@ -15,7 +15,7 @@
       <ul class="menu-list">
         <li ><a href="#comandos-terminal">Comandos terminal</a></li>
         <li ><a href="#comandos-git">Comandos git</a></li>
-        <li ><a href="#github-actions">GitHub Actions</a></li>
+        <li ><a href="#github">Git y GitHub</a></li>
       </ul>
     </nav>
   </div>
@@ -109,37 +109,30 @@
         <dd>Permite crear una nueva rama. Se debe agregar el nombre de la nueva rama.</dd>
         <dt>git checkout -b</dt>
         <dd>Genera una nueva rama y nos mueve a ella directamente</dd>
-        <dt>git resert id-commit</dt>
+        <dt>git reset id-commit</dt>
         <dd>Nos lleva a cualquier commit no importa la rama, eliminando el historial de los commit posteriores al tag seleccionado.</dd>
         <dt>git reset rama-o-id-commit</dt>
         <dd>Nos lleva a cualquier commit sin borrar los commit posteriores al tag seleccionado.</dd>
       </dl>
     </section>
     <section class="conceptos" >
-      <h2 class="titulo" id="github-actions">Comandos básicos de git</h2>
+      <h2 class="titulo" id="github">Comandos básicos de git con git hub</h2>
       <dl>
-        <dt>git init</dt>
-        <dd>Inicia un repositorio en el directorio.</dd>
-        <dt>git status</dt>
-        <dd>Muestra el estado del repositorio.</dd>
-        <dt>git add .</dt>
-        <dd>Agrega los archivos del directorio al stage y los prepara para el primer commit</dd>
-        <dt>git commit -m</dt>
-        <dd>Agrega los archivos al repositorio dejando una version de los archivos en el historial</dd>
-        <dt>git commit -am</dt>
-        <dd>Permite agregar los cambios de un archivo o archivos en el repositorio y hacer un commit o version a la vez.</dd>
-        <dt>git log</dt>
-        <dd>Muestra todo el historial de los commits o versines realizadas de los archivos del directorio</dd>
-        <dt>git reset soft</dt>
-        <dd>Elimina los archivos del repositorio, pero no los elimina del stage ni del directorio.</dd>
-        <dt>git reset mixed</dt>
-        <dd>Elimina los archivos del repositorio y del stage pero no del directorio.</dd>
-        <dt>git reset hard</dt>
-        <dd>Elimna los archivos del repositorio, del stage y del directorio.</dd>
-        <dt>git rm</dt>
-        <dd>Elimina los archivos del directorio pero no elimina las versiones del repositorio</dd>
-        <dt>git checkout</dt>
-        <dd>Permite cambiar entre las versiones que existen en el repositorio.</dd>
+        <dt>git remote add origin</dt>
+        <dd>Agrega un origen remoto donde se ubicaran repositorios o se copiará un repositorio. Se debe agregar el link proporsionado por github.</dd>
+        <dt>git remote</dt>
+        <dd>Muestra si tenemos un origen remoto.</dd>
+        <dt>git remote -v</dt>
+        <dd>Muestra los tipos de origenes que tenemos usalmente fecth y push.</dd>
+        <dt>git branch -m main</dt>
+        <dd>Establece la rama main como principal.</dd>
+        <dt>git push origin main</dt>
+        <dd>Sube nuestro repositorio local en el origen remoto.</dd>
+        <dt>git pull origin main</dt>
+        <dd>Copia el repositorio remoto en nuestro repositorio local o lo actualiza en el caso de que ya hacia sido copiado anteriormente.</dd>
+        <dt>--allow-unrealated-histories</dt>
+        <dd>Da permiso para copiar un repositorio remoto en nuestro local. Se debe usar con git pull.</dd>
+        <dt></dt>
       </dl>
     </section>
   </main>
