@@ -8,7 +8,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="logo"><img src="https://media.dev.to/cdn-cgi/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fi0ban6a4z9hmav9csnbs.png" alt="logo git"></div>
+    <div class="logo"><img src="./assets/git.webp" alt="logo git"></div>
     <div class="inside-container">
     <h1>Curso de Git y GitHub</h1>
     <nav class="menu">
@@ -24,134 +24,188 @@
   <main class="principal">
     <section class="conceptos">
       <h2 class="titulo" id="comandos-terminal">Comandos básicos de la terminal</h2>
-        <dl>
-          <dt>pwd</dt>
-          <dd>Devuelve la ruta del directorio en que estás ubicado.</dd>
-          <dt>ls</dt>
-          <dd>Devuelve los archivos y carpetas que hay en el directorio en el que estás ubicado.</dd>
-          <dt>ls -al</dt>
-          <dd>Devuelve los archivos y carpetas que hay en el directorio en el que estás ubicado incluyendo los archivos ocultos.</dd>
-          <dt>ls -a</dt>
-          <dd>Muestra los archivos ocultos dentro de un directorio.</dd>
-          <dt>ls -l</dt>
-          <dd>Muestra los archivos en forma de lista en un directorio.</dd>
-          <dt>mkdir</dt>
-          <dd>Crea un nuevo directorio o directorios en la ubicación actual. Se debe agregar el nombre del directorio. Ejemplo: mkdir nombre-de-la-carpeta.</dd>
-          <dt>touch</dt>
-          <dd>Crea un nuevo archivo o archivos en la ubicación actual. Se debe agregar el nombre del archivo mas su extensión. Ejemplo: touch archivo.txt.</dd>
-          <dt>rm</dt>
-          <dd>Elimina archivos de un directorio. Se debe agregar el nombre del archivo y su extensión. rm archivo.txt.</dd>
-          <dt>rm -d</dt>
-          <dd>Elimina un directorio vacio. Se debe agregar el nombre del directorio. rm -d nombre-del-directorio-vacio.</dd>
-          <dt>rm -r</dt>
-          <dd>Elimina un directorio que contiene archivos. Se debe agregar el nombre del directorio. rm -r nombre-del-directorio.</dd>
-          <dt>rm -ri</dt>
-          <dd>Elimina un directorio que contiene archivos. Se debe agregar el nombre del directorio. rm -ri nombre-del-directorio. La terminal te preguntará si estas seguro de eliminar los archivos o carpetas y deberas seleccionar si o no.</dd>
-          <dt>head</dt>
-          <dd>Muestra las primeras 10 lineas de un archivo de texto.</dd>
-          <dt>head -r </dt>
-          <dd>Muestra las primeras de lineas que indiques de un archivo de texto.</dd>
-          <dt>tail</dt>
-          <dd>Muestra las últimas lineas que indiques de un archivo de texto.</dd>
-          <dt>tail -r</dt>
-          <dd>Muestra las ultimas 10 lineas de un archivo de texto.</dd>
-          <dt>less</dt>
-          <dd>Muestra el contenido de un archivo de texto.</dd>
-          <dt>cat</dt>
-          <dd>Muestra el contenido de un archivo especifico. Se debe agregar el nombre del archivo y su extensión. cat archivo.txt</dd>
-          <dt>cd</dt>
-          <dd>Permite ingresar a una capeta que este dentro del directorio. Se debe agregar el nombre de la carpeta. cd nombre-de-la-carpeta</dd>
-          <dt>cd ..</dt>
-          <dd>Permite volver a un nivel anterior de la carpeta en la que te encuentras.</dd>
-          <dt>history</dt>
-          <dd>Muestra el historial de todos los comandos que se han realizado.</dd>
-          <dt>! + número</dt>
-          <dd>Ejecuta el comando asignado a un número en el historial.</dd>
-          <dt>clear</dt>
-          <dd>Limpia la consola.</dd>
-          <dt>type</dt>
-          <dd>Muestra el tipo de comando.</dd>
-          <dt>man</dt>
-          <dd>Muestra información que el manual tiene del comando.</dd>
-          <dt>info</dt>
-          <dd>Muestra información general del comando.</dd>
-          <dt>whatis</dt>
-          <dd>Muestra una información bastante breve del comando.</dd>
-        </dl>
-     
+      <dl>
+        <dt>pwd</dt>
+        <dd>Devuelve la ruta del directorio en que estás ubicado.</dd>
+        
+        <dt>ls</dt>
+        <dd>Devuelve los archivos y carpetas que hay en el directorio en el que estás ubicado.</dd>
+        
+        <dt>ls -al</dt>
+        <dd>Devuelve los archivos y carpetas que hay en el directorio en el que estás ubicado, incluyendo los archivos ocultos.</dd>
+        
+        <dt>ls -a</dt>
+        <dd>Muestra los archivos ocultos dentro de un directorio.</dd>
+        
+        <dt>ls -l</dt>
+        <dd>Muestra los archivos en forma de lista en un directorio.</dd>
+        
+        <dt>mkdir</dt>
+        <dd>Crea un nuevo directorio o directorios en la ubicación actual. Se debe agregar el nombre del directorio. Ejemplo: mkdir nombre-de-la-carpeta.</dd>
+        
+        <dt>touch</dt>
+        <dd>Crea un nuevo archivo o archivos en la ubicación actual. Se debe agregar el nombre del archivo más su extensión. Ejemplo: touch archivo.txt.</dd>
+        
+        <dt>rm</dt>
+        <dd>Elimina archivos de un directorio. Se debe agregar el nombre del archivo y su extensión. Ejemplo: rm archivo.txt.</dd>
+        
+        <dt>rm -d</dt>
+        <dd>Elimina un directorio vacío. Se debe agregar el nombre del directorio. Ejemplo: rm -d nombre-del-directorio-vacío.</dd>
+        
+        <dt>rm -r</dt>
+        <dd>Elimina un directorio que contiene archivos. Se debe agregar el nombre del directorio. Ejemplo: rm -r nombre-del-directorio.</dd>
+        
+        <dt>rm -ri</dt>
+        <dd>Elimina un directorio que contiene archivos. Se debe agregar el nombre del directorio. Ejemplo: rm -ri nombre-del-directorio. La terminal te preguntará si estás seguro de eliminar los archivos o carpetas y deberás seleccionar sí o no.</dd>
+        
+        <dt>head</dt>
+        <dd>Muestra las primeras 10 líneas de un archivo de texto.</dd>
+        
+        <dt>head -n</dt>
+        <dd>Muestra las primeras líneas que indiques de un archivo de texto. Ejemplo: head -n 5 archivo.txt muestra las primeras 5 líneas.</dd>
+        
+        <dt>tail</dt>
+        <dd>Muestra las últimas 10 líneas de un archivo de texto.</dd>
+        
+        <dt>tail -n</dt>
+        <dd>Muestra las últimas líneas que indiques de un archivo de texto. Ejemplo: tail -n 5 archivo.txt muestra las últimas 5 líneas.</dd>
+        
+        <dt>less</dt>
+        <dd>Muestra el contenido de un archivo de texto, permitiendo desplazarse por él.</dd>
+        
+        <dt>cat</dt>
+        <dd>Muestra el contenido de un archivo específico. Se debe agregar el nombre del archivo y su extensión. Ejemplo: cat archivo.txt.</dd>
+        
+        <dt>cd</dt>
+        <dd>Permite ingresar a una carpeta que esté dentro del directorio. Se debe agregar el nombre de la carpeta. Ejemplo: cd nombre-de-la-carpeta.</dd>
+        
+        <dt>cd ..</dt>
+        <dd>Permite volver a un nivel anterior de la carpeta en la que te encuentras.</dd>
+        
+        <dt>history</dt>
+        <dd>Muestra el historial de todos los comandos que se han ejecutado.</dd>
+        
+        <dt>! + número</dt>
+        <dd>Ejecuta el comando asignado a un número en el historial.</dd>
+        
+        <dt>clear</dt>
+        <dd>Limpia la consola.</dd>
+        
+        <dt>type</dt>
+        <dd>Muestra el tipo de comando.</dd>
+        
+        <dt>man</dt>
+        <dd>Muestra la información que el manual tiene del comando.</dd>
+        
+        <dt>info</dt>
+        <dd>Muestra información general del comando.</dd>
+        
+        <dt>whatis</dt>
+        <dd>Muestra una información bastante breve del comando.</dd>
+      </dl>
     </section>
+    
     <section class="conceptos" id="comandos-git">
-      <h2 class="titulo">Comandos básicos de git</h2>
+      <h2 class="titulo">Comandos básicos de Git</h2>
       <dl>
         <dt>git init</dt>
-        <dd>Inicia un repositorio en el directorio.</dd>
+        <dd>Inicia un repositorio en el directorio actual.</dd>
+        
         <dt>git status</dt>
         <dd>Muestra el estado del repositorio.</dd>
+        
         <dt>git add .</dt>
-        <dd>Agrega los archivos del directorio al stage y los prepara para el primer commit</dd>
+        <dd>Agrega los archivos del directorio al <em>stage</em> y los prepara para el <em>commit</em>.</dd>
+        
         <dt>git commit -m</dt>
-        <dd>Agrega los archivos al repositorio dejando una version de los archivos en el historial</dd>
+        <dd>Agrega los archivos al repositorio, dejando una versión de los archivos en el historial.</dd>
+        
         <dt>git commit -am</dt>
-        <dd>Permite agregar los cambios de un archivo o archivos en el repositorio y hacer un commit o version a la vez.</dd>
+        <dd>Permite agregar los cambios de un archivo o archivos en el repositorio y hacer un <em>commit</em> o versión a la vez.</dd>
+        
         <dt>git log</dt>
-        <dd>Muestra todo el historial de los commits o versines realizadas de los archivos del directorio</dd>
+        <dd>Muestra todo el historial de los <em>commits</em> o versiones realizadas de los archivos del directorio.</dd>
+        
         <dt>git reset soft</dt>
-        <dd>Elimina los archivos del repositorio, pero no los elimina del stage ni del directorio.</dd>
+        <dd>Elimina los archivos del repositorio, pero no los elimina del <em>stage</em> ni del directorio.</dd>
+        
         <dt>git reset mixed</dt>
-        <dd>Elimina los archivos del repositorio y del stage pero no del directorio.</dd>
+        <dd>Elimina los archivos del repositorio y del <em>stage</em>, pero no del directorio.</dd>
+        
         <dt>git reset hard</dt>
-        <dd>Elimna los archivos del repositorio, del stage y del directorio.</dd>
+        <dd>Elimina los archivos del repositorio, del <em>stage</em> y del directorio.</dd>
+        
         <dt>git rm</dt>
-        <dd>Elimina los archivos del directorio pero no elimina las versiones del repositorio</dd>
+        <dd>Elimina los archivos del directorio, pero no elimina las versiones del repositorio.</dd>
+        
         <dt>git checkout</dt>
-        <dd>Permite cambiar entre las versiones que existen en el repositorio y permite cambiar entre las ramas existentes.</dd>
+        <dd>Permite cambiar entre las versiones que existen en el repositorio y entre las ramas existentes.</dd>
+        
         <dt>git branch</dt>
         <dd>Permite crear una nueva rama. Se debe agregar el nombre de la nueva rama.</dd>
+        
         <dt>git show-branch</dt>
         <dd>Muestra todas las ramas que existen en forma de lista.</dd>
+        
         <dt>gitk</dt>
-        <dd>Muestra interfaz gráfica de git.</dd>
+        <dd>Muestra una interfaz gráfica de Git.</dd>
+        
         <dt>git checkout -b</dt>
-        <dd>Genera una nueva rama y nos mueve a ella directamente</dd>
+        <dd>Genera una nueva rama y nos mueve a ella directamente.</dd>
+        
         <dt>git reset id-commit</dt>
-        <dd>Nos lleva a cualquier commit no importa la rama, eliminando el historial de los commit posteriores al tag seleccionado.</dd>
+        <dd>Nos lleva a cualquier <em>commit</em>, sin importar la rama, eliminando el historial de los <em>commits</em> posteriores al <em>tag</em> seleccionado.</dd>
+        
         <dt>git reset rama-o-id-commit</dt>
-        <dd>Nos lleva a cualquier commit sin borrar los commit posteriores al tag seleccionado.</dd>
+        <dd>Nos lleva a cualquier <em>commit</em> sin borrar los <em>commits</em> posteriores al <em>tag</em> seleccionado.</dd>
       </dl>
     </section>
-    <section class="conceptos" >
-      <h2 class="titulo" id="github">Comandos básicos de git con github</h2>
+    
+    <section class="conceptos">
+      <h2 class="titulo" id="github">Comandos básicos de Git con GitHub</h2>
       <dl>
         <dt>git remote add origin</dt>
-        <dd>Agrega un origen remoto donde se ubicaran repositorios o se copiará un repositorio. Se debe agregar el link proporsionado por github.</dd>
+        <dd>Agrega un origen remoto donde se ubicarán los repositorios o se copiará un repositorio. Se debe agregar el enlace proporcionado por GitHub.</dd>
+        
         <dt>git remote</dt>
-        <dd>Muestra si tenemos un origen remoto.</dd>
+        <dd>Muestra si tenemos un origen remoto configurado.</dd>
+        
         <dt>git remote -v</dt>
-        <dd>Muestra los tipos de origenes que tenemos usalmente fecth y push.</dd>
+        <dd>Muestra los tipos de orígenes que tenemos, usualmente <em>fetch</em> y <em>push</em>.</dd>
+        
         <dt>git branch -m main</dt>
-        <dd>Establece la rama main como principal.</dd>
+        <dd>Establece la rama <em>main</em> como principal.</dd>
+        
         <dt>git push origin main</dt>
-        <dd>Sube nuestro repositorio local en el origen remoto.</dd>
+        <dd>Sube nuestro repositorio local al origen remoto.</dd>
+        
         <dt>git pull origin main</dt>
-        <dd>Copia el repositorio remoto en nuestro repositorio local o lo actualiza en el caso de que ya hacia sido copiado anteriormente.</dd>
-        <dt>--allow-unrealated-histories</dt>
-        <dd>Da permiso para copiar un repositorio remoto en nuestro local. Se debe usar con git pull.</dd>
-        <dt>git log --all --graph --decorate --online</dt>
-        <dd>Muestra los commits con un pequeño diagrama y la información resumida.</dd>
+        <dd>Copia el repositorio remoto a nuestro repositorio local o lo actualiza en caso de que ya haya sido copiado anteriormente.</dd>
+        
+        <dt>--allow-unrelated-histories</dt>
+        <dd>Permite fusionar historias sin relación al copiar un repositorio remoto en nuestro local. Se debe usar con <em>git pull</em>.</dd>
+        
+        <dt>git log --all --graph --decorate --oneline</dt>
+        <dd>Muestra los <em>commits</em> con un pequeño diagrama y la información resumida.</dd>
+        
         <dt>git tag -a v0.n -m</dt>
-        <dd>Agrega un tag con el nombre v0n.</dd>
+        <dd>Agrega un <em>tag</em> con el nombre <em>v0n</em>.</dd>
+        
         <dt>git tag</dt>
-        <dd>Muestra los tags existentes.</dd>
-        <dt>git tag show-ref --tags.</dt>
-        <dd>Muestra los tags con sus commits.</dd>
-        <dt>git push origin --tags.</dt>
-        <dd>Agrega todos los tags al repositorio remoto.</dd>
+        <dd>Muestra los <em>tags</em> existentes.</dd>
+        
+        <dt>git show-ref --tags</dt>
+        <dd>Muestra los <em>tags</em> junto con sus <em>commits</em>.</dd>
+        
+        <dt>git push origin --tags</dt>
+        <dd>Sube todos los <em>tags</em> al repositorio remoto.</dd>
+        
         <dt>git tag -d nombre</dt>
-        <dd>Borra el tag del repositorio local.</dd>
-        <dt>git tag :refs/tags/nombre</dt>
-        <dd>Borra el tag del repositorio remoto.</dd>
-      </dl>
-    </section>
+        <dd>Elimina el <em>tag</em> del repositorio local.</dd>
+        
+        <dt>git push origin :refs/tags/nombre</dt>
+        <dd>Elimina el <em>tag</em> del repositorio remoto.</dd>
+    
   </main>
   <footer class="pie">
     <p>Elaborado por Maynor López</p>
