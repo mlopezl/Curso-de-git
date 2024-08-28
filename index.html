@@ -107,6 +107,10 @@
         <dd>Permite cambiar entre las versiones que existen en el repositorio y permite cambiar entre las ramas existentes.</dd>
         <dt>git branch</dt>
         <dd>Permite crear una nueva rama. Se debe agregar el nombre de la nueva rama.</dd>
+        <dt>git show-branch</dt>
+        <dd>Muestra todas las ramas que existen en forma de lista.</dd>
+        <dt>gitk</dt>
+        <dd>Muestra interfaz gráfica de git.</dd>
         <dt>git checkout -b</dt>
         <dd>Genera una nueva rama y nos mueve a ella directamente</dd>
         <dt>git reset id-commit</dt>
@@ -116,7 +120,7 @@
       </dl>
     </section>
     <section class="conceptos" >
-      <h2 class="titulo" id="github">Comandos básicos de git con git hub</h2>
+      <h2 class="titulo" id="github">Comandos básicos de git con github</h2>
       <dl>
         <dt>git remote add origin</dt>
         <dd>Agrega un origen remoto donde se ubicaran repositorios o se copiará un repositorio. Se debe agregar el link proporsionado por github.</dd>
@@ -132,7 +136,20 @@
         <dd>Copia el repositorio remoto en nuestro repositorio local o lo actualiza en el caso de que ya hacia sido copiado anteriormente.</dd>
         <dt>--allow-unrealated-histories</dt>
         <dd>Da permiso para copiar un repositorio remoto en nuestro local. Se debe usar con git pull.</dd>
-        <dt></dt>
+        <dt>git log --all --graph --decorate --online</dt>
+        <dd>Muestra los commits con un pequeño diagrama y la información resumida.</dd>
+        <dt>git tag -a v0.n -m</dt>
+        <dd>Agrega un tag con el nombre v0n.</dd>
+        <dt>git tag</dt>
+        <dd>Muestra los tags existentes.</dd>
+        <dt>git tag show-ref --tags.</dt>
+        <dd>Muestra los tags con sus commits.</dd>
+        <dt>git push origin --tags.</dt>
+        <dd>Agrega todos los tags al repositorio remoto.</dd>
+        <dt>git tag -d nombre</dt>
+        <dd>Borra el tag del repositorio local.</dd>
+        <dt>git tag :refs/tags/nombre</dt>
+        <dd>Borra el tag del repositorio remoto.</dd>
       </dl>
     </section>
   </main>
