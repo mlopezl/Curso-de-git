@@ -10,6 +10,13 @@
     --four-color: #89B8CD;
 } */
 
+/* :root{
+    --primary-color: #ee5033;
+    --secondary-color: #white;
+    --third-color: #1D6C98;
+    --four-color: #89B8CD;
+} */
+
 :root{
     --primary-color: #535E56;
     --secondary-color: #DADBE4;
