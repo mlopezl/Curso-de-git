@@ -125,7 +125,7 @@ dl dd:last-child{
     border-top: 4px solid #3d4e6b;
 }
 
-@media (max-width: 800px){
+@media (max-width: 850px){
     .logo img{
         display: none;
     }
