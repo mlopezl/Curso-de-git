@@ -124,7 +124,7 @@ dl dd:last-child{
     border-top: 4px solid white;
 }
 
-@media (max-width: 800px){
+@media (max-width: 850px){
     .logo img{
         display: none;
     }
@@ -140,6 +140,6 @@ dl dd:last-child{
     }
 
     .header{
-       height: 320px;
+       height: 400px;
     }
 }
