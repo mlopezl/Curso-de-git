@@ -30,6 +30,4 @@ A lo largo de este proyecto, he podido:
 - Publicar repositorios locales en GitHub y clonar repositorios remotos en mi entorno local.
 - Publicar mi sitio web de manera pública usando GitHub Pages.
 
-## Agradecimientos
-
 ¡Gracias por visitar este repositorio!
